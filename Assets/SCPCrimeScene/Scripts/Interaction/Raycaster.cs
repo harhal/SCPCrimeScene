@@ -41,6 +41,11 @@ public class Raycaster : MonoBehaviour
 
 	public static HitInfo RaycastFromScreenPoint(Vector3 screenPoint)
 	{
+		if (CameraComponent == null)
+		{
+			return new HitInfo();
+		}
+		
 		Ray ray = CameraComponent.ScreenPointToRay(screenPoint);
 		RaycastHit[] hits = Physics.RaycastAll(ray, float.PositiveInfinity);
 

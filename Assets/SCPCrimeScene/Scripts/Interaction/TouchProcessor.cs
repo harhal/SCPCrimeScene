@@ -14,6 +14,11 @@ public class TouchProcessor : MonoBehaviour
 	
 	void Update ()
 	{
+		if (activeObjects == null)
+		{
+			return;
+		}
+		
 		var currentHits = new Dictionary<GameObject, HitInfo>();
 		if (Input.touchSupported)
 		{
