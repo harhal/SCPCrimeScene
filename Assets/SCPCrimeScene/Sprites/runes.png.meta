@@ -8,6 +8,8 @@ TextureImporter:
     21300006: runes_3
     21300008: runes_4
     21300010: runes_5
+    21300012: runes_6
+    21300014: runes_7
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -127,7 +129,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 19
-        y: 1960
+        y: 3006
         width: 1265
         height: 1149
       alignment: 0
@@ -137,7 +139,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 41f5ce973267e69478854b51ce83d988
+      spriteID: 71910b990e1e3424eb570e1c5b8d4c6f
       vertices: []
       indices: 
       edges: []
@@ -146,9 +148,9 @@ TextureImporter:
       name: runes_1
       rect:
         serializedVersion: 2
-        x: 1712
-        y: 1952
-        width: 1019
+        x: 1688
+        y: 2998
+        width: 1024
         height: 1148
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -157,7 +159,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f1d8d9696ac2ece46b941f72304f72b2
+      spriteID: 7431d4b75dba82d4e988caac085b2324
       vertices: []
       indices: 
       edges: []
@@ -166,8 +168,8 @@ TextureImporter:
       name: runes_2
       rect:
         serializedVersion: 2
-        x: 3187
-        y: 1924
+        x: 3188
+        y: 2970
         width: 1121
         height: 1189
       alignment: 0
@@ -177,7 +179,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f2c9079cce95d8a4ea817a6ba7fbb2fa
+      spriteID: 460c6f14bb8344c4a85c79175cb0029c
       vertices: []
       indices: 
       edges: []
@@ -186,10 +188,10 @@ TextureImporter:
       name: runes_3
       rect:
         serializedVersion: 2
-        x: 74
-        y: 19
-        width: 1155
-        height: 1155
+        x: 68
+        y: 1525
+        width: 1157
+        height: 1157
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -197,7 +199,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7b45bc9429ed3ec4384dab6aed4b6ccb
+      spriteID: b561e2918b9444b41b65ab531ea71dd8
       vertices: []
       indices: 
       edges: []
@@ -206,9 +208,9 @@ TextureImporter:
       name: runes_4
       rect:
         serializedVersion: 2
-        x: 1649
-        y: 19
-        width: 1146
+        x: 1620
+        y: 1534
+        width: 1149
         height: 1148
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -217,7 +219,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a340651266ac3d54a98f69fe812105ee
+      spriteID: 180d26c6582cb7747a4ff6f6fb20876f
       vertices: []
       indices: 
       edges: []
@@ -226,10 +228,10 @@ TextureImporter:
       name: runes_5
       rect:
         serializedVersion: 2
-        x: 3181
-        y: 32
+        x: 3173
+        y: 1557
         width: 1136
-        height: 1135
+        height: 1136
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -237,7 +239,47 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1f4d4ec3094fef2448d81e10cf750956
+      spriteID: 6c3ab9c378aaa41448a3e17d18ababf4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: runes_6
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 64
+        width: 956
+        height: 1140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37c94a94a7be3cb498128f9f441c265a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: runes_7
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 30
+        width: 816
+        height: 1222
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b5c7a296a88cdd4c8f8747bbee6bcc7
       vertices: []
       indices: 
       edges: []
