@@ -15,10 +15,21 @@ public class CipherSwitch : InteractiveButton, IIntValueProvider
 
 	public int CipherCount = 1;
 
+	private void Start()
+	{
+		Shake();
+	}
+
 	public override void ProcessClick()
 	{
 		AddValue();
 		base.ProcessClick();
+	}
+
+	public void Shake()
+	{
+		KeyValue = Random.Range(0, CipherCount);
+		ProcessClick();
 	}
 
 	public void AddValue()

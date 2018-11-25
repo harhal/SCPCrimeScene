@@ -47,11 +47,12 @@ public class Raycaster : MonoBehaviour
 		}
 		
 		Ray ray = CameraComponent.ScreenPointToRay(screenPoint);
-		RaycastHit[] hits = Physics.RaycastAll(ray, float.PositiveInfinity);
-
-		if (hits.Length > 0)
+		
+		RaycastHit hit;
+		
+		if (Physics.Raycast(ray, out hit))
 		{
-			return new HitInfo(hits[0].point, hits[0].normal, ray.direction, hits[0].transform.gameObject);
+			return new HitInfo(hit.point, hit.normal, ray.direction, hit.transform.gameObject);
 		}
 		
 		return new HitInfo();

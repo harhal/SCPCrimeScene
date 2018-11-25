@@ -6,6 +6,8 @@ public class CipherCilinder : MonoBehaviour
 {
 	private IIntValueProvider ValueProvider;
 
+	public Transform SpinnerTransform;
+
 	public Vector3 WheelAxis;
 
 	public int ValuesCount = 1;
@@ -18,12 +20,12 @@ public class CipherCilinder : MonoBehaviour
 
 	public void UpdateRotation()
 	{
-		transform.rotation = Quaternion.AngleAxis(360.0f / ValuesCount * ValueProvider.GetValue(), WheelAxis.normalized);
+		SpinnerTransform.transform.localRotation = Quaternion.AngleAxis(360.0f / ValuesCount * ValueProvider.GetValue(), WheelAxis.normalized);
 	}
 
 	private void OnDrawGizmosSelected()
 	{
-		Gizmos.DrawLine(transform.position, transform.position + transform.localToWorldMatrix.MultiplyVector(WheelAxis.normalized));
-		Gizmos.DrawCube(transform.localToWorldMatrix.MultiplyVector(WheelAxis.normalized), new Vector3(0.1f, 0.1f, 0.1f));
+		Gizmos.DrawLine(SpinnerTransform.transform.position, SpinnerTransform.transform.position + SpinnerTransform.transform.localToWorldMatrix.MultiplyVector(WheelAxis.normalized));
+		Gizmos.DrawCube(SpinnerTransform.transform.localToWorldMatrix.MultiplyVector(WheelAxis.normalized), new Vector3(0.1f, 0.1f, 0.1f));
 	}
 }

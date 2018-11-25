@@ -28,6 +28,11 @@ public class CodeLock : MonoBehaviour
 
 	public void TryOpen ()
 	{
+		if (_keyFields == null)
+		{
+			return;
+		}
+		
 		int validKeysCount = 0;
 		foreach (var keyField in _keyFields)
 		{

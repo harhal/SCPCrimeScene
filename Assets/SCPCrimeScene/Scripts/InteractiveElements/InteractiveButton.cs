@@ -26,6 +26,6 @@ public class InteractiveButton : MonoBehaviour , IInteractiveObject
 
 	public bool ValidateNormalOffset(float normalOffsetCos)
 	{
-		return normalOffsetCos > 0.6f;
+		return normalOffsetCos > 0.3f;
 	}
 }
