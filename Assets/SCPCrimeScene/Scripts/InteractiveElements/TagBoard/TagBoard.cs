@@ -5,7 +5,7 @@ using UnityEngine;
 public class TagBoard : MonoBehaviour
 {
 	public TagBoardSlot[] Slots;
-	public int MixCycles = 6;
+	public int MixCycles = 12;
 
 	public UnityEngine.UI.Button.ButtonClickedEvent OnOpen;
 	
@@ -22,11 +22,13 @@ public class TagBoard : MonoBehaviour
 
 	void Mix()
 	{
+		TagBoardSlot emptySlot = Slots[Slots.Length - 1];
+		
 		for (int i = 0; i < MixCycles; i++)
 		{
-			int firstSlot = Random.Range(0, Slots.Length);
-			int secondSlot = Random.Range(0, Slots.Length);
-			Slots[firstSlot].Swap(Slots[secondSlot]);
+			TagBoardSlot slotToSwap = emptySlot.Connected[Random.Range(0, emptySlot.Connected.Length)];
+			emptySlot.Swap(slotToSwap);
+			emptySlot = slotToSwap;
 		}
 	}
 
