@@ -24,9 +24,8 @@ public class TagBoard : MonoBehaviour
 	{
 		for (int i = 0; i < MixCycles; i++)
 		{
-			int firstSlot = Random.Range(0, Slots.Length - 1);
-			int secondSlot = Random.Range(0, Slots.Length - 1);
-			print("Swap " + firstSlot.ToString() + " with " + secondSlot.ToString());
+			int firstSlot = Random.Range(0, Slots.Length);
+			int secondSlot = Random.Range(0, Slots.Length);
 			Slots[firstSlot].Swap(Slots[secondSlot]);
 		}
 	}
